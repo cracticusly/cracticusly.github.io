@@ -33,10 +33,12 @@
 		  	margin: 10px;
 		  	height: 15vh;
 		  	text-align: center;
+		  	padding-bottom: 3vh;
 		  }
 
 		  header img {
             height: 10vh;
+            image-rendering: auto;
 		  }
 
 		  header h4, header h1 , header p{
@@ -296,4 +298,34 @@
           .contact a:hover {
             cursor: pointer;
             color: orange;
+          }
+
+          /*media query for phones*/
+          @media only screen  and (max-width : 720px){
+          	/*about section*/
+          	.about_section {
+          	display: inline;
+          }
+
+          	.about_text {
+          	text-align: center;
+          	margin: 30px;
+          }
+
+          /*games section*/
+
+          .Games_container {
+			display: inline;
+			}
+
+		  /*Anim reel*/
+
+		  .video_container {
+          	position:relative;
+			padding-bottom:56.25%;
+			padding-top:30px;
+			margin: 1vh;
+			height:0;
+          }
+
           }
