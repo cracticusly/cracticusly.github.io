@@ -232,7 +232,7 @@
 		  	transition: .5s ease;
 		  }
 
-		  .digi_collection img:hover {
+		  .digi_collection img:active {
 		  	width: 90vh;
 		  	height: auto;
 		  	object-fit: fill;
