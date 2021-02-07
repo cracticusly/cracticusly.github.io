@@ -225,14 +225,14 @@
 		  }
 
 		  .digi_collection img {
-		  	width: 25vh;
-		  	height: 25vh;
+		  	width: 218px;
+		  	height: 218px;
 		  	float: left;
 		  	object-fit: cover;
 		  	transition: .5s ease;
 		  }
 
-		  .digi_collection img:active {
+		  .digi_collection img.expanded{
 		  	width: 90vh;
 		  	height: auto;
 		  	object-fit: fill;
