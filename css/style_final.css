@@ -15,6 +15,7 @@
 		  	  font-family: 'Alegreya Sans SC';
 		      position: relative;
 		      /*background-color:#2b1622;*/
+		      top:60px;
 		  }
 
 		  h3 {
@@ -71,6 +72,8 @@
             top:0;
             width: 100%;
             font-size: 18px;
+            position: fixed;
+            background-color: rgb(0,108,108);
     	  }
 
     	  nav ul {
@@ -80,12 +83,14 @@
             float: right;
             margin-right: 15px;
             align-items: center;
+            background-color: rgb(0,108,108);
           }
           
           nav ul li {
             text-align: center;
             padding: 10px 10px;
             position: relative;
+            background-color: rgb(0,108,108);
           }
 
           nav ul li:hover {
@@ -99,6 +104,7 @@
           nav ul li a {
             color:  white;
             text-decoration: none;
+            background-color: rgb(0,108,108);
           }
 
           .illus_header {
@@ -236,11 +242,14 @@
 		  	cursor: pointer;
 		  }
 
-		  .digi_collection img:active/*.expanded*/{
-		  	width: 90vh;
+		  /*.digi_collection img:active/*.expanded*//*{
+		  /*	width: 90vh;
 		  	height: auto;
 		  	object-fit: fill;
+		  	-webkit-transform:scale(1);
+    		transform:scale(1);
 		  }
+		  */
 
 		  .clearfix {
           	clear: both;
