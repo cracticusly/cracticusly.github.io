@@ -78,7 +78,7 @@
 
     	  nav ul {
             display: grid;
-            grid-template-columns:auto auto auto auto;
+            grid-template-columns:auto auto auto auto auto;
             grid-template-rows: 50px;
             float: right;
             margin-right: 15px;
@@ -240,6 +240,15 @@
 
 		  .digi_collection img:hover {
 		  	cursor: pointer;
+		  }
+
+		  .merchInfo {
+			text-align: center;
+		  }
+		  .merchInfo img {
+			width: 90vh;
+		  	height: auto;
+		  	object-fit: fill;
 		  }
 
 		  /*.digi_collection img:active/*.expanded*//*{
