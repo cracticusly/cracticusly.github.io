@@ -224,16 +224,20 @@
 		  }
 
 		  /*Digital illustration section*/
-		  .digi_collection {
-		  	display: grid;
-		  	grid-template-columns: auto;
-			grid-template-rows: auto ;
+		  .digi_collection  {
+			
+		  }
+		  .digi_collection ul {
+		  	display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			
 		  }
 
 		  .digi_collection img {
 		  	width: 218px;
 		  	height: 218px;
-		  	float: left;
 		  	object-fit: cover;
 		  	transition: .5s ease;
 		  }
@@ -244,9 +248,10 @@
 
 		  .merchInfo {
 			text-align: center;
+			width: auto;
 		  }
 		  .merchInfo img {
-			width: 90vh;
+			width: 90vw;
 		  	height: auto;
 		  	object-fit: fill;
 		  }
@@ -292,24 +297,29 @@
 
           /*about section*/
           .about_section {
-          	display: grid;
-          	grid-template-columns: 1fr 1fr;
           	padding-top: 10vh;
+			display: grid;
+		    justify-content: center;
+		    align-content: center;
+		    gap: 4px;
+		    grid-auto-flow: column;
           }
 
           .about_img {
-          	text-align: center;
+			display: flex;
+			align-self:center;
+			object-fit: scale-down;
+			height: auto;
           }
 
           .about_text {
-          	float: left;
-          	margin-top: 20px;
-          	margin-right: 30px;
+			width: 40vw;
           }
 
           .about_text p {
           	background-color: #109090;
           	padding: 10px;
+			margin-top: 5px;
           }
 
           .contact {
@@ -322,22 +332,44 @@
             color: orange;
           }
 
+
           /*media query for phones*/
           @media only screen  and (max-width : 720px){
-          	/*about section*/
-          	.about_section {
-          	display: inline;
+
+		   /*#region NavBar*/
+
+		  nav {
+            font-size: 17px;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+    	  }
+
+		  nav ul {
+			grid-template-columns:auto;
+		    grid-auto-flow: column;
+            margin-right: 0px;
+          }
+          
+          nav ul li {
+            padding: 5px 5px;
           }
 
-          	.about_text {
-          	text-align: center;
-          	margin: 30px;
-          }
+		  /*header*/
+		  header {
+          	display:block;
+		  }
+
+		  header img {
+            height: 10vh;
+			min-height: 50px;
+            image-rendering: auto;
+		  }
 
           /*games section*/
 
           .Games_container {
-			display: inline;
+			display: inline-block;
 			}
 
 		  /*Anim reel*/
@@ -349,4 +381,25 @@
 			margin: 1vh;
 			height:0;
           }
+
+		  /*about section*/
+
+		  .about_section {
+			display: inline-block;
+			grid-auto-flow: rows;
+          }
+
+		  .about_img {
+			height: 20vh;
+			min-height: 50px;
+			text-align: center;
+			justify-content: center;
+		  }
+
+		  .about_text {
+			width: 90vw;
+			text-align: center;
+          	margin: 30px;
+		  }
+
 		  }
