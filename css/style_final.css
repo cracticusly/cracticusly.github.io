@@ -26,7 +26,8 @@
 		  h3 {
 		  	font-size: 40px;
 		  	text-align: center;
-		  	background-color: black;
+		  	/*background-color: black;*/
+			background-color: rgba(16,18,144,.6);
 		  }
 
 		  h4 {
@@ -78,7 +79,8 @@
             width: 100%;
             font-size: 18px;
             position: fixed;
-            background-color: rgb(0,108,108);
+			background-color: rgba(16,16,144,.9);
+            /*background-color: rgb(0,108,108);*/
     	  }
 
     	  nav ul {
@@ -88,14 +90,14 @@
             float: right;
             margin-right: 15px;
             align-items: center;
-            background-color: rgb(0,108,108);
+            /*background-color: rgb(0,108,108);*/
           }
           
           nav ul li {
             text-align: center;
             padding: 10px 10px;
             position: relative;
-            background-color: rgb(0,108,108);
+            /*background-color: rgb(0,108,108);*/
           }
 
           nav ul li:hover {
@@ -109,7 +111,7 @@
           nav ul li a {
             color:  white;
             text-decoration: none;
-            background-color: rgb(0,108,108);
+            /*background-color: rgb(0,108,108);*/
           }
 
           .illus_header {
@@ -156,8 +158,16 @@
 
 		  .section_header {
           	width: auto;
-		  	margin: 2px .5%;
-		  	padding-top: 5px;
+		  	margin: 5vh .5%;
+          }
+
+		  .Collab_content {
+			text-align: center;
+			padding-bottom: 5vh;
+		  }
+
+		  .Collab_content p:hover a{
+            color: orange;
           }
 
           .Games_container {
@@ -251,6 +261,7 @@
 		  	cursor: pointer;
 		  }
 
+		  /*Merch section*/
 		  .merchInfo {
 			text-align: center;
 			width: auto;
@@ -259,6 +270,35 @@
 			width: 90vw;
 		  	height: auto;
 		  	object-fit: fill;
+		  }
+
+		  .merchInfo p:hover a{
+            color: orange;
+          }
+
+		  .itemInfo p{
+			  font-family: 'Lucida Console';
+			  font-size: 16px;
+		  }
+
+		  .intro {
+			width: 80vw;
+			text-align: center;
+			width: 90vw;
+			margin: 5vw;
+		  }
+
+		  .intro img {
+			max-width: 15vw;
+		  }
+
+		  .item ul {
+			display: inline-flex;
+			
+		  }
+
+		  .item ul img {
+			max-height: 30vh;
 		  }
 
 		  /*.digi_collection img:active/*.expanded*//*{
@@ -282,6 +322,7 @@
 
           .anim_vid {
           	text-align: center;
+			padding-top:30px;
           }
 
           .video_container {
@@ -324,6 +365,7 @@
           }
 
           .about_text {
+			font-family: 'Lucida Console';
 			width: 40vw;
           }
 
@@ -333,12 +375,28 @@
           	/*background-color: #109090;*/
           	padding: 10px;
 			margin-top: 0px;
+			font-size: 15px;
           }
 
           .contact {
           	text-align: center;
+          	margin-top: 10vh;
+          }
+
+		  .contact ul{
           	margin-top: 5vh;
           }
+
+		  .contact li {
+			display: grid;
+		    justify-content: center;
+		    align-content: center;
+		    grid-auto-flow: column;
+		  }
+
+		  .contact img {
+			max-height: 40px;
+		  }
 
           .contact a:hover {
             cursor: pointer;
@@ -404,6 +462,8 @@
 		  .about_section {
 			display: inline-block;
 			grid-auto-flow: rows;
+			align-content: center;
+			
           }
 
 		  .about_img {
@@ -415,8 +475,18 @@
 
 		  .about_text {
 			width: 90vw;
+			margin: 5vw;
 			text-align: center;
-          	margin: 30px;
 		  }
 
+		  .contact ul{
+			padding-bottom: 10vh;
 		  }
+
+		  .contact li {
+			display: inline-block;
+			grid-auto-flow: rows;
+			align-content: center;
+		  }
+
+		 }
